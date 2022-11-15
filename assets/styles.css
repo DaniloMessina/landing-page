@@ -9,13 +9,16 @@
  }
 
  header {
-    background-color: #32508b;
+   background: rgb(131,96,195);
+   background: linear-gradient(180deg, #8360c3 13%, #2ebf91 99%);
     width: 100%;
     display: flex;  
     justify-content: space-between;
     align-items: center;
-    height: 75px;
+    height: 90px;
     padding: 0px 30px;
+    position: fixed;
+    top: 0;
    }
 .logo-dm {
    height: 95%;
@@ -26,6 +29,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   
 }
 .navbar {
    gap: 250px;
@@ -37,4 +41,94 @@
 }
 .navbar-list a{
    color: rgb(240, 243, 245);
+
+}
+a:hover {
+   font-weight: bolder;
+   border-radius: 25px;
+}
+
+.navbar-list a img{
+   width: 85px;
+}
+
+
+main {
+   background: #2ebd90;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: rgb(104, 110, 93);
+}
+
+#hero {
+   margin-top: 75px;
+   margin left: 500px;
+   padding: 0px 0px ;
+   max-width: 1200px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.hero-eslogan {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   width: 55%;
+}
+
+.hero-eslogan h1 {
+   font-size: 35px;
+   width: 80%;
+   min-width: 500px;
+}
+
+.hero-eslogan p {
+   font-size: 20px;
+   width: 80%;
+   min-width: 500px;
+ }
+
+.hero-eslogan a {
+   font-size: 20px;
+   background-color: #469c78; 
+   width: 100px;
+   padding: 10px 0px;
+   border-radius: 10px;
+   text-align: center;
+   border-style: solid ;
+   border-color: #468068;
+   margin-left: 150px
+}
+
+.hero-foto-portada img {
+   margin-top: 75px;
+   width: 500px;
+   padding: 0px;
+   border-radius: 90px;
+   border-style: solid;
+   border-color: #468068 ;
+}
+
+#texto-info { 
+   padding: 70px 50px ;
+   max-width: 1200px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0px 170px;
+  
+}
+
+#texto-info p {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   font-weight: 400;
+   font-size: 20px;
+   color: rgb(104, 110, 93);
+
 }
