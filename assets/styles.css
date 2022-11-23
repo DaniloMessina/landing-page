@@ -310,6 +310,18 @@ a:hover {
 
 }
 
+@media (max-width: 899px ) {
+#texto-info p {
+    display: none;
+   }
+
+.info-card p {
+   font-size: 19px;
+   font-weight: 500; }
+}
+
+
+
 @media (max-width: 820px ) {
 .navbar-list {
    position: absolute;
@@ -354,7 +366,6 @@ a:hover {
 .info-card p {
    font-size: 19px;
    font-weight: 500;
-   color: #4b6451;
    display: flex;
    justify-content: center;
    text-align: center;
@@ -383,6 +394,6 @@ a:hover {
       margin-top: 25px;
       margin-left: 0px;
       margin-right: 25px;
+   }
 
 }
-
