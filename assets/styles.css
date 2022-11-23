@@ -19,6 +19,7 @@
     padding: 0px 30px;
     position: fixed;
     top: 0;
+    z-index: 1;
    }
 .logo-dm {
    height: 95%;
@@ -34,6 +35,16 @@
 .navbar {
    gap: 250px;
 }
+
+.navbar i {
+   font-size: 36px;
+   display: none;
+}
+
+#toggle-menu {
+   display: none;
+}
+
 .navbar-list {
    gap: 35px;
    font-size: 18px;
@@ -160,7 +171,7 @@ main {
 }
 
 #card h2 {
-   font-weight: 200px;
+   font-weight: 200;
    font-size: 45px;
    text-align: center
    }
@@ -172,12 +183,11 @@ main {
    width: 300px;
    height: 500px;
    padding: 15px;
-   border: ;
    gap: 20px;
    text-align: center;
    background-color: #499c5e;
    border-style: solid ;
-   border-color: #468068;
+   border-color: #47705f;
    border-radius: 15px;
 }
 
@@ -188,11 +198,12 @@ main {
    max-width: 250px;
    max-height: 250px;
    border-radius: 15px;
+   
 }
 
 .info-card p {
    font-size: 18px;
-   font-weight: 200px;
+   font-weight: 50¡50;
    color: #4b6451;
    display: flex;
    justify-content: center;
@@ -242,3 +253,136 @@ a:hover {
    font-weight: bolder;
    color: #4d2697;
 }
+
+@media (max-width: 1120px ) {
+
+.hero-foto-portada {
+   display: none;
+}
+
+.hero-eslogan {
+   margin-top: 25px;
+   margin-left: 200px;
+   gap: 20px;
+   width: 55%;
+   align-text: center;
+
+}
+
+ h1 {
+   font-size: 40px;
+   width: 100%;
+   min-width: 500px;
+}
+
+.hero-eslogan a {
+   font-size: 20px
+}
+
+.hero-eslogan p {
+   font-size: 22px;
+   
+}
+
+#texto-info p {
+   font-size: 23px;
+   font-weight: 500;
+   
+}
+
+}
+
+@media (max-width: 1120px ) {
+
+.hero-eslogan {
+   margin-top: 25px;
+   margin-left: 100px;
+}
+.navbar {
+   margin-left: 100px;
+   gap: 0;
+}
+
+#card {
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+}
+
+@media (max-width: 820px ) {
+.navbar-list {
+   position: absolute;
+   top: 80px;
+   left: 100px;
+   width: 80%;
+   flex-direction: column;
+   background-color: #38685c;
+   border: 3px solid #17241c;
+   border-top: 0px;
+   border-radius: 0px 0px 15px 15px;
+   padding: 45px 30px;
+   gap: 45px;
+   z-index: 1;
+   transform: translateX(200%);
+   transition: all 0.4s ease-out;
+   align-items: center;
+}
+
+.navbar-list a {
+   font-size: 25px;
+}
+
+.navbar-list a img {
+   width: 150px;
+   height: 150px;
+   align-items: center;
+   margin-left: 15px;
+
+}
+
+.navbar i {
+   display: block;
+   cursor: pointer;
+}
+
+#toggle-menu:checked + .navbar-list {
+   transform: translateX(0%);
+   transition: all 0.4s ease-in;
+}
+
+.info-card p {
+   font-size: 19px;
+   font-weight: 500;
+   color: #4b6451;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+
+
+}
+
+#card h2 {
+   font-weight: 200;
+   font-size: 50px;
+   text-align: center
+}
+
+.card-3 {
+   padding:25px;
+}
+
+}
+
+@media (max-width: 680px) {
+   #texto-info p {
+      display: none;
+   }
+
+   .hero-eslogan {
+      margin-top: 25px;
+      margin-left: 0px;
+      margin-right: 25px;
+
+}
+
